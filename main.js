@@ -185,5 +185,19 @@ $(window).on("scroll", function () {
   
 });
 
+$(document).on('scroll' , function(){
+    
+  $('.heading').css("transition-duration" ,   "0.6s");
+  $('.heading').css("top" , Math.max(58 - 0.4*scrollY  , 18) + "%");
+  $('.leftbox').css("transition-duration" ,   "0.6s");
+  $('.leftbox').css("left" , Math.min(-23 + 6*scrollY , 7 )  + "%");
+  $('.rightbox').css("transition-duration" ,   "0.6s");
+  $('.rightbox').css("left" , Math.max(120 - 6*scrollY ,65)  + "%");
 
+  $('.image').css("transition-duration" ,   "0.6s");
+  $('.image').css("left" , Math.max(120 - 6*scrollY ,71)  + "%");
+})
 /*timeline*/
+
+
+
