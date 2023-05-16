@@ -1,13 +1,4 @@
-export function setupCounter(element) {
-  let counter = 0
-  const setCounter = (count) => {
-    counter = count
-    element.innerHTML = `count is ${counter}`
-  }
-  element.addEventListener('click', () => setCounter(counter + 1))
-  setCounter(0)
-}
-var countdown = new Date("Apr 7 , 2023 00:00:00").getTime();
+var countdown = new Date("May 30 , 2023 00:00:00").getTime();
 var x = setInterval(() => {
     var current = new Date().getTime();
     var distance = countdown-current;
